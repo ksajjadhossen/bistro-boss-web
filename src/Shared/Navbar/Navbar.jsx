@@ -1,20 +1,31 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
 	const navOptions = (
 		<>
 			<li>
-				<a>Item 1</a>
+				<Link to={"/"}>Home</Link>
 			</li>
 			<li>
-				<a>Parent 2</a>
+				<Link to={"/contactUs"}>Contact Us</Link>
 			</li>
 			<li>
-				<a>Item 3</a>
+				<Link to={"/dashboard"}>Dashboard</Link>
+			</li>
+			<li>
+				<Link to={"/ourMenu"}>Our Menu</Link>
+			</li>
+			<li>
+				<Link to={"/ourShop"}>Our Shop</Link>
+			</li>
+			<li>
+				<Link to={"/signIn"}>Sign in</Link>
 			</li>
 		</>
 	);
 	return (
 		<div className="navbar bg-black/30 text-white fixed z-10">
-			<div className="navbar-start">
+			<div className="navbar-start ">
 				<div className="dropdown">
 					<div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
 						<svg
@@ -41,7 +52,7 @@ const Navbar = () => {
 				</div>
 				<a className="btn btn-ghost text-xl">BistroBoss</a>
 			</div>
-			<div className="navbar-end hidden lg:flex">
+			<div className="navbar-end hidden lg:flex text-2xl">
 				<ul className="menu menu-horizontal px-1">{navOptions}</ul>
 			</div>
 		</div>
