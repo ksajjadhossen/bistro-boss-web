@@ -14,7 +14,7 @@ const PopularMenu = () => {
 	});
 
 	return (
-		<section>
+		<section className="">
 			<SectionTitle
 				subHeading="Check it out"
 				heading="From Our Menu"
@@ -23,6 +23,9 @@ const PopularMenu = () => {
 				{menu.map((item) => (
 					<MenuItem key={item.id} data={item}></MenuItem>
 				))}
+			</div>
+			<div class="flex justify-center items-center ">
+				<button class="btn btn-soft">View Full Menu</button>
 			</div>
 		</section>
 	);
