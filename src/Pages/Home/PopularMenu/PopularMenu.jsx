@@ -14,7 +14,7 @@ const PopularMenu = () => {
 	});
 
 	return (
-		<section className="">
+		<section className=" py-10">
 			<SectionTitle
 				subHeading="Check it out"
 				heading="From Our Menu"
