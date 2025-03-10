@@ -6,7 +6,7 @@ const Banner = () => {
 			<Carousel>
 				<div>
 					<img src="https://i.ibb.co.com/vvmYvzSL/01.jpg" />
-				</div>
+				</div> 
 				<div>
 					<img src="https://i.ibb.co.com/W4cfZBtF/02.jpg" />
 				</div>
@@ -22,7 +22,7 @@ const Banner = () => {
 				<div>
 					<img src="https://i.ibb.co.com/zWvMvfWj/06.png" />
 				</div>
-			</Carousel>
+			</Carousel> 
 		</div>
 	);
 };

@@ -16,7 +16,7 @@ const Footer = () => {
 					</svg>
 					<p>
 						ACME Industries Ltd.
-						<br />
+						<br /> 
 						Providing reliable tech since 1992
 					</p>
 				</aside>
