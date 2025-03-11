@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+
 const SectionTitle = ({ heading, subHeading }) => {
 	return (
 		<div className="text-center my-8 w-4/12 mx-auto">
