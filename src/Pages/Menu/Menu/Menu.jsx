@@ -11,6 +11,7 @@ const Menu = () => {
   const pizza = menu.filter((item) => item.category === "pizza");
   const offered = menu.filter((item) => item.category === "offered");
   const salad = menu.filter((item) => item.category === "salad");
+
   return (
     <div>
       <Helmet>
@@ -22,7 +23,7 @@ const Menu = () => {
         title="Our Menu"
         description="Would you like to try"
         heading="Don't miss"
-        subheading="Today's Offer"
+        subHeading="Today's Offer"
       ></MenuCategory>
 
       <MenuCategory
@@ -30,8 +31,8 @@ const Menu = () => {
         img={"https://i.ibb.co.com/fGM9C3sx/chef-service.jpg"}
         title="Desserts"
         description="lorem"
-        heading="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-        subheading="Today's Offer"
+        heading="Dessert"
+        subHeading="Today's Offer"
       ></MenuCategory>
       <MenuCategory
         category={pizza}
@@ -39,7 +40,7 @@ const Menu = () => {
         title="pizzas"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
         heading="Don't miss"
-        subheading="Today's Offer"
+        subHeading="Today's Offer"
       ></MenuCategory>
       <MenuCategory
         category={salad}
@@ -47,7 +48,7 @@ const Menu = () => {
         title="Salads"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
         heading="Don't miss"
-        subheading="Today's Offer"
+        subHeading="Today's Offer"
       ></MenuCategory>
       <MenuCategory
         category={soup}
@@ -55,7 +56,7 @@ const Menu = () => {
         title="Soups"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
         heading="Don't miss"
-        subheading="Today's Offer"
+        subHeading="Today's Offer"
       ></MenuCategory>
     </div>
   );
