@@ -10,8 +10,7 @@ const useMenu = () => {
         setMenu(data), setLoading(false);
       })
     );
-  });
-  console.log(menu);
+  }, []);
   return [menu, loading];
 };
 

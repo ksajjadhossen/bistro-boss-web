@@ -2,9 +2,19 @@ import { useState } from "react";
 import ItemBanner from "../../../Shared/ItemBanner/ItemBanner";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import useMenu from "../../../hooks/useMenu";
+import OrderCard from "../../../components/OrderCard/OrderCard";
+import OrderTab from "../../../components/OrderTab/OrderTab";
 
 const OurShop = () => {
-  const [tabs, setTabs] = useState([0]);
+  const [tabs, setTabs] = useState(0);
+  const [menu] = useMenu();
+  const soup = menu.filter((item) => item.category === "soup");
+  const dessert = menu.filter((item) => item.category === "dessert");
+  const pizza = menu.filter((item) => item.category === "pizza");
+  const salad = menu.filter((item) => item.category === "salad");
+  const drinks = menu.filter((item) => item.category === "drinks");
+
   return (
     <div>
       <ItemBanner
@@ -21,8 +31,21 @@ const OurShop = () => {
           <Tab>Desserts</Tab>
           <Tab>Drinks</Tab>
         </TabList>
-        <TabPanel></TabPanel>
-        <TabPanel></TabPanel>
+        <TabPanel>
+          <OrderTab items={salad}></OrderTab>
+        </TabPanel>
+        <TabPanel>
+          <OrderTab items={pizza}></OrderTab>
+        </TabPanel>
+        <TabPanel>
+          <OrderTab items={soup}></OrderTab>
+        </TabPanel>
+        <TabPanel>
+          <OrderTab items={dessert}></OrderTab>
+        </TabPanel>
+        <TabPanel>
+          <OrderTab items={drinks}></OrderTab>
+        </TabPanel>
       </Tabs>
     </div>
   );
